@@ -1,0 +1,10 @@
+point_t* generer_joueur(niveau_t* niveau);
+void liberation_point(point_t* point);
+point_t* init_point_par(point_t* parent);
+void position_ap_deplacement(point_t* position, char direction);
+int contient_caisse(niveau_t* niveau, point_t* cible);
+int contient_joueur(niveau_t* niveau, point_t* cible);
+int contient_vide(niveau_t* niveau, point_t* cible);
+int contient_objectif(niveau_t* niveau, point_t* cible);
+int deplacement_possible(niveau_t* niveau, point_t* case_suivante);
+void deplacement (historique_t* hist, niveau_t* niveau, char direction);
